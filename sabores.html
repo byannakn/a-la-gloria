@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sabores — A la Gloria</title>
+<meta name="description" content="Todos los sabores de A la Gloria: helados, nieves, paletas, cocteles y Huellitas para mascotas." />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="theme-pink">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logo">A <sup>la</sup> Gloria</a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="sabores.html" aria-current="page" data-i18n="nav_sabores">Sabores</a>
+        <a href="fechas.html" data-i18n="nav_fechas">¿Dónde estámos?</a>
+        <a href="conocenos.html" data-i18n="nav_conocenos">Conócenos</a>
+        <button class="lang-toggle" type="button">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top:20px;">
+      <div class="wrap">
+
+        <h1 data-i18n="page_title">Sabores</h1>
+        <p class="legend" data-i18n="legend_text">*sabores de temporada&nbsp;&nbsp;&nbsp;**por encargo</p>
+
+        <!-- ================= PESTAÑAS ================= -->
+        <div data-tabs>
+          <div class="tab-list" role="tablist" aria-label="Categorías de sabores">
+            <button class="tab-btn" role="tab" id="tab-helados" aria-controls="panel-helados" aria-selected="true" data-i18n="tab_helados">Helados y nieves</button>
+            <button class="tab-btn" role="tab" id="tab-paletas" aria-controls="panel-paletas" aria-selected="false" data-i18n="tab_paletas">Paletas</button>
+            <button class="tab-btn" role="tab" id="tab-cocteles" aria-controls="panel-cocteles" aria-selected="false" data-i18n="tab_cocteles">Cocteles</button>
+            <button class="tab-btn" role="tab" id="tab-huellitas" aria-controls="panel-huellitas" aria-selected="false" data-i18n="tab_huellitas">Huellitas</button>
+          </div>
+
+          <!-- ---- Helados y nieves ---- -->
+          <div class="tab-panel" id="panel-helados" role="tabpanel" aria-labelledby="tab-helados">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start;">
+              <div class="flavor-columns" style="grid-column:1;">
+                <div>
+                  <h3 class="flavor-group-title" data-i18n="group_helado_leche">Helado (base leche)</h3>
+                  <ul class="flavor-list">
+                    <li>Chocolate</li><li>Pistache</li><li>Fresa</li><li>Vainilla</li><li>Café</li>
+                    <li>Mamey</li><li>Oreo</li><li>Plátano c/ kínder delice</li><li>Beso de ángel</li>
+                    <li>Queso</li><li>Algodón de azúcar</li><li>Lavanda*</li><li>Pan de muerto*</li>
+                    <li>Pulque con arándanos**</li><li>Mezcal**</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="flavor-group-title" data-i18n="group_nieve_agua">Nieve (base agua)</h3>
+                  <ul class="flavor-list">
+                    <li>Limón</li><li>Mango</li><li>Picafresa</li><li>Guayaba</li><li>Piña-coco*</li>
+                    <li>Tuna roja*</li><li>Melón*</li><li>Yaca*</li><li>Tamarindo</li>
+                    <li>Mandarina*</li><li>Manzana</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="img-placeholder" style="aspect-ratio:1/1;" data-i18n="photo_helados_alt">
+                [Foto de helado con toppings]
+              </div>
+            </div>
+          </div>
+
+          <!-- ---- Paletas ---- -->
+          <div class="tab-panel" id="panel-paletas" role="tabpanel" aria-labelledby="tab-paletas" hidden>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start;">
+              <div class="img-placeholder" style="aspect-ratio:1/1;" data-i18n="photo_paletas_alt">
+                [Foto de paleta de chocolate]
+              </div>
+              <div class="flavor-columns" style="grid-column:2;">
+                <div>
+                  <h3 class="flavor-group-title" data-i18n="group_base_leche">base leche</h3>
+                  <ul class="flavor-list">
+                    <li>Chocolate</li><li>Pistache</li><li>Fresa</li><li>Vainilla</li><li>Café</li>
+                    <li>Nuez</li><li>Mamey</li><li>Oreo</li><li>Plátano c/ kínder delice</li>
+                    <li>Beso de ángel</li><li>Queso</li><li>Pan de muerto*</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="flavor-group-title" data-i18n="group_base_agua">base agua</h3>
+                  <ul class="flavor-list">
+                    <li>Limón</li><li>Mango</li><li>Mango-chamoy</li><li>Picafresa</li><li>Guayaba</li>
+                    <li>Grosella</li><li>Mandarina</li><li>Limón-picafresa</li><li>Limón con panditas</li>
+                    <li>Uva-mora</li><li>Piña-coco*</li><li>Tamarindo</li><li>Melón*</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ---- Cocteles ---- -->
+          <div class="tab-panel" id="panel-cocteles" role="tabpanel" aria-labelledby="tab-cocteles" hidden>
+            <span class="age-note" data-i18n="age_note">🔞 Bebidas con alcohol — solo para mayores de edad</span>
+            <ul class="flavor-list" style="max-width:340px;">
+              <li>Kosako</li><li>Mojito</li><li>Perla negra</li><li>Panditas con vodka</li>
+              <li>Limón con tequila</li><li>Mezcal con naranja</li><li>Piña colada con ron</li>
+              <li>Crema de whiskey</li>
+            </ul>
+          </div>
+
+          <!-- ---- Huellitas ---- -->
+          <div class="tab-panel" id="panel-huellitas" role="tabpanel" aria-labelledby="tab-huellitas" hidden>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start;">
+              <div>
+                <h2 data-i18n="huellitas_title">Recetas para consentirlos a todos</h2>
+                <p class="legend" style="text-align:left;" data-i18n="huellitas_note">*con palito de carnaza para disfrutarla completa</p>
+
+                <div class="recipe">
+                  <h4 data-i18n="recipe_pollo_title">Caldo de pollo</h4>
+                  <p data-i18n="recipe_pollo_text">Sin especias, con trozos de pechuga.</p>
+                </div>
+                <div class="recipe">
+                  <h4 data-i18n="recipe_tocino_title">Tocino</h4>
+                  <p data-i18n="recipe_tocino_text">Yogurt griego con tocino sin grasa, a la plancha.</p>
+                </div>
+                <div class="recipe">
+                  <h4 data-i18n="recipe_manzana_title">Manzana</h4>
+                  <p data-i18n="recipe_manzana_text">Yogurt griego con puré de manzana.</p>
+                </div>
+                <div class="recipe">
+                  <h4 data-i18n="recipe_zanahoria_title">Zanahoria</h4>
+                  <p data-i18n="recipe_zanahoria_text">Yogurt griego con puré de zanahoria.</p>
+                </div>
+              </div>
+              <div class="img-placeholder" style="aspect-ratio:1/1;" data-i18n="photo_huellitas_alt">
+                [Foto de la paleta con forma de huellita]
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/525521854085?text=Hola%2C%20busco%20algo%20fresco%20y%20rico"
+           class="whatsapp-strip" target="_blank" rel="noopener" style="margin-top:32px;">
+          <span aria-hidden="true">💬</span>
+          <span data-i18n="whatsapp_cta">¿Buscas algo fresco y rico para tu evento?</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ================= CÓMO SE PIDE ================= -->
+    <section class="section" style="background:var(--theme-soft);">
+      <div class="wrap">
+        <span class="pill-title" data-i18n="how_title">¿cómo lo pides?</span>
+        <p data-i18n="how_text">Con chamoy, miguelito, tajín, jarabe de chocolate, chispitas... ¡el helado es para consentirte, así que vístelo a tu gusto!</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="social" aria-label="Redes sociales">
+      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">👍</a>
+    </div>
+    <p data-i18n="footer_rights">Hecho con cariño, un bazar a la vez.</p>
+  </footer>
+
+  <!-- ================= BOTONES FLOTANTES ================= -->
+  <div class="float-stack">
+    <button id="float-music" class="float-btn music" data-i18n-attr="aria-label:aria_music">🔇</button>
+    <a class="float-btn whatsapp"
+       href="https://wa.me/525521854085?text=Hola%2C%20quiero%20saber%20d%C3%B3nde%20est%C3%A1n"
+       target="_blank" rel="noopener" data-i18n-attr="aria-label:aria_whatsapp">💬</a>
+  </div>
+
+  <!-- ================= MODAL DE MÚSICA ================= -->
+  <div id="music-modal" class="music-modal" hidden>
+    <div class="music-modal-box">
+      <h2 data-i18n="music_modal_title">¿Con música o sin música?</h2>
+      <p data-i18n="music_modal_text">Tenemos canciones propias para acompañar tu visita. Tú decides.</p>
+      <div class="music-modal-actions">
+        <button class="btn btn-primary" data-music-choice="on" data-i18n="music_yes">Con música 🎵</button>
+        <button class="btn" style="background:#eee;" data-music-choice="off" data-i18n="music_no">Sin música</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bg-audio" loop>
+    <!-- <source src="assets/audio/tema-a-la-gloria.mp3" type="audio/mpeg"> -->
+  </audio>
+
+  <script>
+    window.PAGE_I18N = {
+      es: {
+        page_title: "Sabores",
+        legend_text: "*sabores de temporada   **por encargo",
+        tab_helados: "Helados y nieves",
+        tab_paletas: "Paletas",
+        tab_cocteles: "Cocteles",
+        tab_huellitas: "Huellitas",
+        group_helado_leche: "Helado (base leche)",
+        group_nieve_agua: "Nieve (base agua)",
+        group_base_leche: "base leche",
+        group_base_agua: "base agua",
+        photo_helados_alt: "[Foto de helado con toppings]",
+        photo_paletas_alt: "[Foto de paleta de chocolate]",
+        photo_huellitas_alt: "[Foto de la paleta con forma de huellita]",
+        age_note: "🔞 Bebidas con alcohol — solo para mayores de edad",
+        huellitas_title: "Recetas para consentirlos a todos",
+        huellitas_note: "*con palito de carnaza para disfrutarla completa",
+        recipe_pollo_title: "Caldo de pollo",
+        recipe_pollo_text: "Sin especias, con trozos de pechuga.",
+        recipe_tocino_title: "Tocino",
+        recipe_tocino_text: "Yogurt griego con tocino sin grasa, a la plancha.",
+        recipe_manzana_title: "Manzana",
+        recipe_manzana_text: "Yogurt griego con puré de manzana.",
+        recipe_zanahoria_title: "Zanahoria",
+        recipe_zanahoria_text: "Yogurt griego con puré de zanahoria.",
+        whatsapp_cta: "¿Buscas algo fresco y rico para tu evento?",
+        how_title: "¿cómo lo pides?",
+        how_text: "Con chamoy, miguelito, tajín, jarabe de chocolate, chispitas... ¡el helado es para consentirte, así que vístelo a tu gusto!",
+      },
+      en: {
+        page_title: "Flavors",
+        legend_text: "*seasonal flavor   **made to order",
+        tab_helados: "Ice cream & sorbet",
+        tab_paletas: "Popsicles",
+        tab_cocteles: "Cocktails",
+        tab_huellitas: "Pet treats",
+        group_helado_leche: "Ice cream (milk base)",
+        group_nieve_agua: "Sorbet (water base)",
+        group_base_leche: "milk base",
+        group_base_agua: "water base",
+        photo_helados_alt: "[Photo of ice cream with toppings]",
+        photo_paletas_alt: "[Photo of a chocolate popsicle]",
+        photo_huellitas_alt: "[Photo of the paw-shaped pet treat]",
+        age_note: "🔞 Alcoholic drinks — for adults only",
+        huellitas_title: "Recipes made to spoil them too",
+        huellitas_note: "*with an edible rawhide stick for the full treat",
+        recipe_pollo_title: "Chicken broth",
+        recipe_pollo_text: "No spices, with chicken breast pieces.",
+        recipe_tocino_title: "Bacon",
+        recipe_tocino_text: "Greek yogurt with lean grilled bacon.",
+        recipe_manzana_title: "Apple",
+        recipe_manzana_text: "Greek yogurt with apple purée.",
+        recipe_zanahoria_title: "Carrot",
+        recipe_zanahoria_text: "Greek yogurt with carrot purée.",
+        whatsapp_cta: "Looking for something fresh and tasty for your event?",
+        how_title: "how do you order it?",
+        how_text: "With chamoy, miguelito, tajín, chocolate syrup, sprinkles... ice cream is for treating yourself, so dress it up your way!",
+      },
+    };
+  </script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

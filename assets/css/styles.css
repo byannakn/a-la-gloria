@@ -150,7 +150,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   left:0; right:0; bottom:-1px;
   height:60px;
   background:var(--paper);
-  clip-path: path("M0,40 C 180,90 360,0 560,35 C 760,70 940,10 1140,45 C 1300,70 1440,30 1440,30 L1440,120 L0,120 Z");
+  clip-path: path("M0,30 C 20,90 80,0 600,35 C 760,70 940,10 1140,45 C 1300,70 1440,30 1440,50 L1440,120 L0,80 Z");
 }
 
 @media (max-width:720px){
@@ -287,6 +287,83 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   display:flex; gap:14px; justify-content:center; margin-bottom:10px;
 }
 .site-footer .social a{ font-size:1.4rem; }
+
+/* ---------- Pestañas (tabs) accesibles ---------- */
+.tab-list{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:28px;
+}
+.tab-btn{
+  font-family:var(--font-heading);
+  font-size:1.05rem;
+  background:var(--paper);
+  border:2px solid var(--theme);
+  color:var(--ink);
+  padding:8px 22px;
+  border-radius:999px;
+  cursor:pointer;
+}
+.tab-btn[aria-selected="true"]{ background:var(--theme); }
+.tab-btn:hover{ background:var(--theme-soft); }
+
+/* ---------- Listas de sabores ---------- */
+.flavor-columns{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:36px;
+}
+@media (max-width:640px){
+  .flavor-columns{ grid-template-columns:1fr; }
+}
+.flavor-group-title{
+  font-family:var(--font-heading);
+  color:var(--theme-dark);
+  font-size:1.2rem;
+  margin-bottom:10px;
+}
+.flavor-list li{
+  font-size:1rem;
+  line-height:2;
+  padding:3px 0;
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
+.legend{
+  font-size:.85rem;
+  color:var(--ink-soft);
+  font-style:italic;
+  text-align:right;
+}
+
+/* ---------- Aviso de edad ---------- */
+.age-note{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#FBE3E3;
+  color:#A63A3A;
+  font-weight:700;
+  padding:10px 18px;
+  border-radius:var(--radius-sm);
+  margin:6px 0 24px;
+}
+
+/* ---------- Huellitas (recetas) ---------- */
+.recipe{
+  border-bottom:1px solid rgba(0,0,0,.08);
+  padding:14px 0;
+}
+.recipe:last-child{ border-bottom:none; }
+.recipe h4{
+  font-family:var(--font-heading);
+  margin:0 0 2px;
+  font-size:1.1rem;
+}
+.recipe p{ margin:0; color:var(--ink-soft); }
+
+/* Página activa en el nav */
+.nav a[aria-current="page"]{ text-decoration:underline; }
 
 /* ---------- Placeholder de imagen ----------
    Reemplaza el <div class="img-placeholder"> completo

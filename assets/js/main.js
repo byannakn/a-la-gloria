@@ -63,3 +63,44 @@
     });
   }
 })();
+
+/* ============================================
+   Pestañas accesibles (usadas en Sabores)
+   Soporta flechas de teclado y enlaces directos
+   tipo sabores.html#huellitas para abrir esa
+   pestaña automáticamente.
+   ============================================ */
+(function () {
+  function initTabs() {
+    document.querySelectorAll("[data-tabs]").forEach((group) => {
+      const tabs = Array.from(group.querySelectorAll('[role="tab"]'));
+      const panels = tabs.map((t) => document.getElementById(t.getAttribute("aria-controls")));
+
+      function activate(index, focus) {
+        tabs.forEach((t, i) => {
+          const selected = i === index;
+          t.setAttribute("aria-selected", String(selected));
+          t.tabIndex = selected ? 0 : -1;
+          if (panels[i]) panels[i].hidden = !selected;
+        });
+        if (focus) tabs[index].focus();
+      }
+
+      const hash = window.location.hash.replace("#", "");
+      let startIndex = tabs.findIndex((t) => t.getAttribute("aria-controls") === "panel-" + hash);
+      if (startIndex === -1) startIndex = 0;
+      activate(startIndex, false);
+
+      tabs.forEach((tab, i) => {
+        tab.addEventListener("click", () => activate(i, false));
+        tab.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowRight") { e.preventDefault(); activate((i + 1) % tabs.length, true); }
+          if (e.key === "ArrowLeft") { e.preventDefault(); activate((i - 1 + tabs.length) % tabs.length, true); }
+          if (e.key === "Home") { e.preventDefault(); activate(0, true); }
+          if (e.key === "End") { e.preventDefault(); activate(tabs.length - 1, true); }
+        });
+      });
+    });
+  }
+  document.addEventListener("DOMContentLoaded", initTabs);
+})();

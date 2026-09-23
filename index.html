@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A la Gloria — Artesanías heladas</title>
+<meta name="description" content="Heladería itinerante artesanal. Nieves, helados, paletas y Huellitas para mascotas. Síguenos para saber en qué bazar estamos." />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="theme-green">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logo">A <sup>la</sup> Gloria</a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="sabores.html" data-i18n="nav_sabores">Sabores</a>
+        <a href="fechas.html" data-i18n="nav_fechas">¿Dónde estámos?</a>
+        <a href="conocenos.html" data-i18n="nav_conocenos">Conócenos</a>
+        <button class="lang-toggle" type="button">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO: evento actual ================= -->
+    <section class="section" style="padding-top:24px;">
+      <div class="wrap" style="display:grid; grid-template-columns:1fr; gap:28px;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center;">
+
+          <div id="hero-flyer" class="img-placeholder" style="aspect-ratio:4/5;" data-i18n="hero_flyer_alt">
+            [Foto/flyer del evento actual — reemplazar por &lt;img&gt;]
+          </div>
+
+          <div>
+            <h1 style="font-size:2rem;" data-i18n="hero_title">¡Ven a consentirte!</h1>
+            <p id="hero-where" data-i18n="hero_where">Hoy los esperamos en <strong>Parque de los Venados</strong></p>
+            <p id="hero-hours" data-i18n="hero_hours">Duración: 26 y 27 de sept de 9 am a 5 pm</p>
+
+            <div id="hero-map" class="img-placeholder" style="aspect-ratio:16/9; margin:16px 0;" data-i18n="hero_map_alt">
+              [Google Maps — se abre en la app al dar clic]
+            </div>
+
+            <a href="fechas.html" class="btn btn-primary" data-i18n="hero_cta">Próximas fechas &gt;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LISTÓN DE MARCA ================= -->
+    <div style="background:var(--theme); color:var(--ink); padding:10px 0; font-family:var(--font-heading); font-size:1.1rem; text-align:center; overflow:hidden;">
+      <span data-i18n="ribbon_text">el helado es para consentirte · seamos toda la familia · el helado es para consentirte</span>
+    </div>
+
+    <!-- ================= BIO ================= -->
+    <section class="section">
+      <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center;">
+        <div>
+          <h2 data-i18n="bio_title">Somos Artesanías Heladas A la Gloria, Date Gusto Ahora Disfruta Una</h2>
+          <p data-i18n="bio_text">Apasionados del helado y de compartirlo a dónde sea que vayas.</p>
+        </div>
+        <div class="img-placeholder" style="aspect-ratio:1/1;" data-i18n="bio_photo_alt">
+          [Foto del equipo / carrito en evento]
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CARRUSEL DE SABORES ================= -->
+    <section class="section" style="background:var(--theme-soft);">
+      <div class="wrap">
+        <h2 class="text-center" data-i18n="flavors_title">Sabores</h2>
+        <p class="text-center" data-i18n="flavors_hint">Toca una categoría para ver el catálogo completo</p>
+
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin-top:20px;">
+          <a href="sabores.html#helados" class="img-placeholder" style="aspect-ratio:1/1;" data-i18n="flavor_card_ice">
+            Helados y nieves
+          </a>
+          <a href="sabores.html#paletas" class="img-placeholder" style="aspect-ratio:1/1;" data-i18n="flavor_card_paletas">
+            Paletas
+          </a>
+          <a href="sabores.html#huellitas" class="img-placeholder" style="aspect-ratio:1/1;" data-i18n="flavor_card_pets">
+            Huellitas
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SABOR DE TEMPORADA ================= -->
+    <section class="section">
+      <div class="wrap">
+        <h2 class="text-center" data-i18n="season_title">Sabor de temporada</h2>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center; margin-top:16px;">
+          <div class="img-placeholder" style="aspect-ratio:4/3;" data-i18n="season_photo_alt">
+            [Foto del helado / referencia del sabor]
+          </div>
+
+          <div class="card text-center">
+            <span class="pill-title" data-i18n="season_order_title">pídelo así:</span>
+            <div class="img-placeholder" style="aspect-ratio:1/1; border-radius:50%; margin:12px auto;" data-i18n="season_order_photo_alt">
+              [Foto de presentación de temporada]
+            </div>
+            <p data-i18n="season_order_text">...o del sabor que quieras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INVÍTANOS ================= -->
+    <section class="section" style="background:var(--theme-soft);">
+      <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center;">
+        <div class="img-placeholder" style="aspect-ratio:4/3;" data-i18n="invite_photo_alt">
+          [Foto del carrito en evento]
+        </div>
+
+        <div>
+          <h2 data-i18n="invite_title">¡Invítanos!</h2>
+          <p data-i18n="invite_text">¡Vuelve especial esa fecha con tus sabores de nieves, helados y paletas favoritos!</p>
+          <a class="whatsapp-strip"
+             href="https://wa.me/525521854085?text=Hola%2C%20busco%20info%20para%20un%20evento"
+             target="_blank" rel="noopener">
+            <span aria-hidden="true">💬</span>
+            <span data-i18n="invite_whatsapp_cta">¿Buscas algo fresco y rico para tu evento?</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="social" aria-label="Redes sociales">
+      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">👍</a>
+    </div>
+    <p data-i18n="footer_rights">Hecho con cariño, un bazar a la vez.</p>
+  </footer>
+
+  <!-- ================= BOTONES FLOTANTES ================= -->
+  <div class="float-stack">
+    <button id="float-music" class="float-btn music" data-i18n-attr="aria-label:aria_music">🔇</button>
+    <a class="float-btn whatsapp"
+       href="https://wa.me/525521854085?text=Hola%2C%20quiero%20saber%20d%C3%B3nde%20est%C3%A1n"
+       target="_blank" rel="noopener" data-i18n-attr="aria-label:aria_whatsapp">💬</a>
+  </div>
+
+  <!-- ================= MODAL DE MÚSICA ================= -->
+  <div id="music-modal" class="music-modal" hidden>
+    <div class="music-modal-box">
+      <h2 data-i18n="music_modal_title">¿Con música o sin música?</h2>
+      <p data-i18n="music_modal_text">Tenemos canciones propias para acompañar tu visita. Tú decides.</p>
+      <div class="music-modal-actions">
+        <button class="btn btn-primary" data-music-choice="on" data-i18n="music_yes">Con música 🎵</button>
+        <button class="btn" style="background:#eee;" data-music-choice="off" data-i18n="music_no">Sin música</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coloca aquí la pista propia cuando la tengas -->
+  <audio id="bg-audio" loop>
+    <!-- <source src="assets/audio/tema-a-la-gloria.mp3" type="audio/mpeg"> -->
+  </audio>
+
+  <script>
+    window.PAGE_I18N = {
+      es: {
+        hero_flyer_alt: "[Foto/flyer del evento actual — reemplazar por <img>]",
+        hero_title: "¡Ven a consentirte!",
+        hero_where: "Hoy los esperamos en <strong>Parque de los Venados</strong>",
+        hero_hours: "Duración: 26 y 27 de sept de 9 am a 5 pm",
+        hero_map_alt: "[Google Maps — se abre en la app al dar clic]",
+        hero_cta: "Próximas fechas >",
+        ribbon_text: "el helado es para consentirte · seamos toda la familia · el helado es para consentirte",
+        bio_title: "Somos Artesanías Heladas A la Gloria, Date Gusto Ahora Disfruta Una",
+        bio_text: "Apasionados del helado y de compartirlo a dónde sea que vayas.",
+        bio_photo_alt: "[Foto del equipo / carrito en evento]",
+        flavors_title: "Sabores",
+        flavors_hint: "Toca una categoría para ver el catálogo completo",
+        flavor_card_ice: "Helados y nieves",
+        flavor_card_paletas: "Paletas",
+        flavor_card_pets: "Huellitas",
+        season_title: "Sabor de temporada",
+        season_photo_alt: "[Foto del helado / referencia del sabor]",
+        season_order_title: "pídelo así:",
+        season_order_photo_alt: "[Foto de presentación de temporada]",
+        season_order_text: "...o del sabor que quieras.",
+        invite_photo_alt: "[Foto del carrito en evento]",
+        invite_title: "¡Invítanos!",
+        invite_text: "¡Vuelve especial esa fecha con tus sabores de nieves, helados y paletas favoritos!",
+        invite_whatsapp_cta: "¿Buscas algo fresco y rico para tu evento?",
+      },
+      en: {
+        hero_flyer_alt: "[Current event photo/flyer — replace with <img>]",
+        hero_title: "Come treat yourself!",
+        hero_where: "Find us today at <strong>Parque de los Venados</strong>",
+        hero_hours: "Sept 26–27, 9 am to 5 pm",
+        hero_map_alt: "[Google Maps — opens in the app on click]",
+        hero_cta: "Upcoming dates >",
+        ribbon_text: "ice cream is for treating yourself · the whole family included · ice cream is for treating yourself",
+        bio_title: "We're Artesanías Heladas A la Gloria — treat yourself, enjoy one now",
+        bio_text: "Passionate about ice cream, and about sharing it wherever we go.",
+        bio_photo_alt: "[Team photo / cart at an event]",
+        flavors_title: "Flavors",
+        flavors_hint: "Tap a category to see the full menu",
+        flavor_card_ice: "Ice cream & sorbet",
+        flavor_card_paletas: "Popsicles",
+        flavor_card_pets: "Pet treats",
+        season_title: "Seasonal flavor",
+        season_photo_alt: "[Photo of the seasonal flavor]",
+        season_order_title: "order it like this:",
+        season_order_photo_alt: "[Seasonal presentation photo]",
+        season_order_text: "...or whichever flavor you like.",
+        invite_photo_alt: "[Photo of the cart at an event]",
+        invite_title: "Book us!",
+        invite_text: "Make that date special with your favorite sorbets, ice creams and popsicles!",
+        invite_whatsapp_cta: "Looking for something fresh and tasty for your event?",
+      },
+    };
+  </script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/agenda.js"></script>
+  <script>
+    (async function () {
+      try {
+        const items = await window.AlGloriaAgenda.fetchAgenda();
+        const next = window.AlGloriaAgenda.nextConfirmed(items);
+        if (!next) return; // se queda el texto de ejemplo si no hay eventos próximos
+
+        const flyerEl = document.getElementById("hero-flyer");
+        if (next.imagenUrl && flyerEl) {
+          const img = document.createElement("img");
+          img.src = next.imagenUrl;
+          img.alt = next.imagenAlt || next.evento || "Foto del evento";
+          img.style.borderRadius = "var(--radius-sm)";
+          img.style.aspectRatio = "4/5";
+          img.style.objectFit = "cover";
+          flyerEl.replaceWith(img);
+        }
+
+        const whereEl = document.getElementById("hero-where");
+        if (whereEl && next.lugar) {
+          whereEl.innerHTML = `${window.AlGloriaI18n.getLang() === "en" ? "Find us today at" : "Hoy los esperamos en"} <strong>${next.lugar}</strong>`;
+        }
+
+        const hoursEl = document.getElementById("hero-hours");
+        if (hoursEl && next.fecha) {
+          const fechaLegible = new Date(next.fecha + "T00:00:00").toLocaleDateString(
+            window.AlGloriaI18n.getLang() === "en" ? "en-US" : "es-MX",
+            { weekday: "long", day: "numeric", month: "long" }
+          );
+          hoursEl.textContent = `${next.evento ? next.evento + " — " : ""}${fechaLegible}`;
+        }
+
+        const mapEl = document.getElementById("hero-map");
+        if (mapEl && next.ubicacion) {
+          // Espera un link de inserción de Google Maps (Compartir > Insertar un mapa).
+          // Si en tu hoja usas otro formato (coordenadas, link corto), avísame para ajustar esta parte.
+          const iframe = document.createElement("iframe");
+          iframe.src = next.ubicacion;
+          iframe.title = "Mapa del evento";
+          iframe.loading = "lazy";
+          iframe.style.border = "0";
+          iframe.style.width = "100%";
+          iframe.style.height = "100%";
+          iframe.style.borderRadius = "var(--radius-sm)";
+          mapEl.replaceWith(iframe);
+          iframe.id = "hero-map";
+        }
+      } catch (err) {
+        console.error("No se pudo cargar la próxima fecha desde el Sheet:", err);
+      }
+    })();
+  </script>
+</body>
+</html>
